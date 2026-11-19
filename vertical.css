@@ -8,6 +8,7 @@
 html {
     scroll-margin-top: 70px; /*beri ruang napas di atas pas di sroll ke id ini atau halam yang di kasi id*/
     scroll-behavior: smooth;
+    scroll-snap-type: y proximity; /* 'proximity' lebih ramah daripada 'mendatory' biar tidak memaksa berlebihan*/
 }
 
 body {
@@ -38,6 +39,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    scroll-snap-align: start; /*berhenti saat di dekat awal sectionnya, dan akan disesuaikan dengan batas bagian atas section*/
 }
 
 .dark {background-color: #141414;}
