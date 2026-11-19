@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: #ffffff;
+}
+
+.parallax-bg {
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Kunci utama efek parallex CSS klasik */
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 32px;
+}
+
+.bg-1 {
+    background-image: linear-gradient(
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.45)), url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80");
+}
+
+.bg-2 {
+    background-image: linear-gradient(
+    rgba(0, 0, 0, 0.45), 
+    rgba(0, 0, 0, 0.45)), url("https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1400&q=80"); 
+}
+
+.caption {
+    max-width: 600px;
+    padding: 24px 32px;
+    background: rgba(15, 15, 15,0.65);
+    backdrop-filter: blur(6px);
+    border-radius: 12px;
+}
+
+.content-block {
+    padding: 80px 32px;
+    background-color: #141414;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content-block h2 {
+    margin-bottom: 12px;
+}
+
+.content-block p {
+    color: #b3b3b3;
+    line-height: 1.6;
+}
