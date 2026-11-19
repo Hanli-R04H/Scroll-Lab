@@ -1,0 +1,58 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: #ffffff;
+}
+
+.page {
+    padding: 48px 32px;
+}
+
+.subtitle {
+    color: #a3a3a3;
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+/* Wadah Horizontal Scroll */
+.slider-track {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 16px; /*buat ruang dikit agar scrollbar bawa tidak nempel di kartu*/
+
+    /* 1. Kunci berhenti rapi per kartu (arah horizontal = x) */
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    /* 2. Sembunyikan scrollbar bawaan (Firefox & IE/Edge lama) */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+/* Sembunyikan scrollbar bawaan di Chrome, Safari, Edge modern */
+.slider-track::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    flex-shrink: 0; /* Kunci agar kartu tidak menyusut/gepeng */
+    background-color: #1e293b;
+    width: 280px;
+    height: 360px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+
+    /* Titik rata kartu saat berhenti di-scroll */
+    scroll-snap-align: start;
+}
