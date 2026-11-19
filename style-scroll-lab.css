@@ -1,25 +1,44 @@
-head, body {
+* {
     margin: 0;
-    width: 100%;
-    height: 100vh;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    background: linear-gradient(to bottom, 
-    rgba(255, 155, 81, 0.3) 1%,
-    rgba(37, 52, 63, 0.1) 50%,
-    rgba(255, 155, 81, 0.3) 100%);
 }
 
-/* bagian nav-simpel */
-.top-bar {
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: #ffffff;
+}
+
+.top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px 32px;
+    background: rgba(15, 15, 15, 0.85);
     display: flex;
-    background-color: #FF9B51;
-    justify-content: space-around;
-    padding: 8px 0;
+    gap: 20px;
+    z-index: 10;
 }
 
-.nav-right {
-    color: #25343F;
-    font-size: 40px;
-    font-weight: bold;
+.top-nav a {
+    color: #e5e5e5;
+    text-decoration: none;
 }
+
+.box-area {
+    min-height: 100vh;
+    padding: 90px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dark {background-color: #141414;}
+.navy {background-color: #101827;}
+.plum {background-color: #1f1629;}
